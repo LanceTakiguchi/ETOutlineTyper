@@ -1,3 +1,4 @@
+console.log("checker.js")
 document.addEventListener('DOMContentLoaded', function(event) {
     // console.log("Hello World")
     // const outline = JSON.parse(SourceOutline);
@@ -13,8 +14,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     //     outline = data;
     //     alert(outline);
     // });
-    console.log("script.js")
-    console.log(outline);
+    // console.log(outline);
 
     // var letterIndex = 0;
     // const outlineOrder = ["I"]
@@ -26,4 +26,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         console.log('get json')
         console.log(json); // this will show the info it in firebug console
     });
+
+    // const userInput:string = document.getElementsByClassName("text-checker").value;
+    // console.log(userInput);
 })
+
+const userInput = document.querySelector(".ice-cream");
+
+
+selectElement.addEventListener("change", (event) => {
+    result.textContent = `You like ${event.target.value}`;
+  });
