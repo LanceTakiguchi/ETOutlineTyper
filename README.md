@@ -36,5 +36,7 @@ We suggest that you begin by typing:
 ## Ideas
 
 ### Configurations
-
 * Stop moving ahead at error or continue forward (scripture typer & type racer vs real doc typing) 
+
+## Todo:
+* Fix the json "number"

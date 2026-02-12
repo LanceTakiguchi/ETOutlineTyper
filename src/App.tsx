@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 interface Section {
-  number: number | string
+  section: number | string
   heading: string
+  day?: string
   subsections?: Section[]
 }
 
@@ -20,7 +21,7 @@ function flattenSections(sections: Section[], depth: number = 0): string[] {
   const lines: string[] = []
   for (const section of sections) {
     const indent = '  '.repeat(depth)
-    lines.push(`${indent}${section.number}. ${section.heading}`)
+    lines.push(`${indent}${section.section}. ${section.heading}`)
     if (section.subsections && section.subsections.length > 0) {
       lines.push(...flattenSections(section.subsections, depth + 1))
     }
