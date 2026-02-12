@@ -38,4 +38,4 @@ A typing practice application for an evangelism outline.
 * Resize the window
 
 ## Updates
-* Feature: Allow a preview of the outline. 
+* Feature: Allow a preview of the outline. 2/12/2026 - LT

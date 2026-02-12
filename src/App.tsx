@@ -35,6 +35,7 @@ export default function App() {
   const [target, setTarget] = useState<string>('')
   const [typed, setTyped] = useState<string>('')
   const [error, setError] = useState<string | null>(null)
+  const [previewVisible, setPreviewVisible] = useState<boolean>(false)
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   // Get Outline data on load.
@@ -123,8 +124,11 @@ export default function App() {
           />
           <p className="text-sm text-gray-500 mt-1">Typing target is first {Math.max(1, Math.ceil((day / 10) * (outline.length || 1)))} characters of the outline.</p>
         </div> */}
-
-        <div className='preview mb-4 p-4 bg-slate-100 rounded max-h-64 overflow-auto font-mono text-sm'>
+        <div className="mb-4 flex items-center gap-2">
+          <label className="block text-sm font-medium text-gray-700">Outline Preview</label>
+          <button onClick={() => setPreviewVisible((v) => !v)} className="px-2 py-1 bg-gray-200 rounded text-sm">{previewVisible ? 'Hide' : 'Show'}</button>
+        </div>
+        <div className={`${previewVisible ? null : ' hidden'} preview mb-4 p-4 bg-slate-100 rounded max-h-64 overflow-auto font-mono text-sm`}>
           {outline.split('\n').map((line, i) => (
             <div key={i} className="text-sm text-black-400 font-mono whitespace-pre-wrap">{line}</div>
           ))}
