@@ -23,10 +23,19 @@ A typing practice application for an evangelism outline.
 
 ## Todo:
 * Fix the json "number" / "section" based on a fresh copy of the outline
+    * Blocked 🧊: Waiting on friend to provide copy and day divisions.
 * Fix the days to the real days.
+    * Blocked 🧊: Waiting on friend to provide day divisions.
 * Don't expect users to type new lines, auto new line for them.
 * Don't use a text area. use an input. Ones the line is complete, create a new line, lock in the old section as HTML.
-* Feature: Allow a preview of the outline. 
+* dark mode
 * Updates readme.md
    * commands
    * Update tech description
+
+## Manual QA:
+* Scroll check the preview
+* Resize the window
+
+## Updates
+* Feature: Allow a preview of the outline. 

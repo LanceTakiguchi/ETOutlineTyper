@@ -37,6 +37,7 @@ export default function App() {
   const [error, setError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement | null>(null)
 
+  // Get Outline data on load.
   useEffect(() => {
     fetch('/EToutline.json')
       .then((r) => r.json())
@@ -47,19 +48,23 @@ export default function App() {
       .catch(() => setOutline('Could not load EToutline.json'))
   }, [])
 
+  // Day Sectioning.
   useEffect(() => {
     // compute portion based on day (1..10)
-    const chars = outline.length
-    const take = Math.max(1, Math.ceil((day / 10) * chars))
-    setTarget(outline.slice(0, take))
+    // const chars = outline.length
+    // const take = Math.max(1, Math.ceil((day / 10) * chars))
+    // setTarget(outline.slice(0, take))
+    setTarget(outline)
     setTyped('')
     setError(null)
   }, [outline, day])
 
+  // Focus input on load.
   useEffect(() => {
     inputRef.current?.focus()
   }, [inputRef, target])
 
+  // Typing logic.
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (!target) return
@@ -90,6 +95,7 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKey)
   }, [target, typed])
 
+
   const renderChar = (ch: string, i: number) => {
     const isTyped = i < typed.length
     const isCurrent = i === typed.length
@@ -105,7 +111,7 @@ export default function App() {
       <div className="w-full max-w-3xl bg-white shadow-md rounded-lg p-6">
         <h1 className="text-2xl font-semibold mb-4">ET Outline Typer</h1>
 
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">Day (1–10)</label>
           <input
             type="number"
@@ -116,6 +122,12 @@ export default function App() {
             className="mt-1 block w-24 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           />
           <p className="text-sm text-gray-500 mt-1">Typing target is first {Math.max(1, Math.ceil((day / 10) * (outline.length || 1)))} characters of the outline.</p>
+        </div> */}
+
+        <div className='preview mb-4 p-4 bg-slate-100 rounded max-h-64 overflow-auto font-mono text-sm'>
+          {outline.split('\n').map((line, i) => (
+            <div key={i} className="text-sm text-black-400 font-mono whitespace-pre-wrap">{line}</div>
+          ))}
         </div>
 
         <div className="mb-4">
