@@ -32,6 +32,11 @@ A typing practice application for an evangelism outline.
 * Updates readme.md
    * commands
    * Update tech description
+* make mobile friendly
+* Hide outline typing preview
+* Gradual give a hint for the next character
+* Check if you need to use backspace to delete.
+* Add a reset button
 
 ## Manual QA:
 * Scroll check the preview

@@ -31,11 +31,12 @@ function flattenSections(sections: Section[], depth: number = 0): string[] {
 
 export default function App() {
   const [outline, setOutline] = useState<string>('')
-  const [day, setDay] = useState<number>(1)
+  const [day, setDay] = useState<number>(10)
   const [target, setTarget] = useState<string>('')
   const [typed, setTyped] = useState<string>('')
   const [error, setError] = useState<string | null>(null)
   const [previewVisible, setPreviewVisible] = useState<boolean>(false)
+  const [ghostVisible, setGhostVisible] = useState<boolean>(false)
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   // Get Outline data on load.
@@ -77,8 +78,8 @@ export default function App() {
         return
       }
 
-      const expected = target[typed.length]
-      const expectedKey = normalizeExpectedKey(expected)
+      const expected = target[typed.length];
+      const expectedKey = normalizeExpectedKey(expected);
 
       // If user typed the right key, advance
       if (e.key === expectedKey) {
@@ -100,7 +101,7 @@ export default function App() {
   const renderChar = (ch: string, i: number) => {
     const isTyped = i < typed.length
     const isCurrent = i === typed.length
-    const base = isTyped ? 'text-green-600' : isCurrent ? 'underline text-black' : 'text-gray-400'
+    const base = isTyped ? 'text-green-600' : isCurrent ? 'underline text-black' : ghostVisible ? 'text-gray-400' : 'hidden'
     const visible = ch === '\n' ? '↵' : ch === ' ' ? '·' : ch
     return (
       <span key={i} className={`${base} not-italic whitespace-pre-wrap`}>{visible}</span>
@@ -126,7 +127,7 @@ export default function App() {
         </div> */}
         <div className="mb-4 flex items-center gap-2">
           <label className="block text-sm font-medium text-gray-700">Outline Preview</label>
-          <button onClick={() => setPreviewVisible((v) => !v)} className="px-2 py-1 bg-gray-200 rounded text-sm">{previewVisible ? 'Hide' : 'Show'}</button>
+          <button onClick={() => setPreviewVisible((v) => !v)} className="px-2 py-1 bg-gray-200 rounded text-sm">{previewVisible ? 'Hide 🙈' : 'Show 🐵'}</button>
         </div>
         <div className={`${previewVisible ? null : ' hidden'} preview mb-4 p-4 bg-slate-100 rounded max-h-64 overflow-auto font-mono text-sm`}>
           {outline.split('\n').map((line, i) => (
@@ -139,7 +140,12 @@ export default function App() {
           <p className="text-sm text-gray-600">Type the outline character-by-character. If you type a wrong character the progress will pause until you correct it. Use Backspace to delete.</p>
         </div>
 
-        <div className="mb-4 p-4 bg-slate-100 rounded min-h-[12rem] overflow-auto font-mono text-sm">
+        <div className="mb-4 flex items-center gap-2">
+          <label className="block text-sm font-medium text-gray-700">Ghost Characters</label>
+          <button onClick={() => setGhostVisible((v) => !v)} className="px-2 py-1 bg-gray-200 rounded text-sm">{ghostVisible ? 'Hide 👻' : 'Show 👻'}</button>
+        </div>
+
+        <div className="type-area mb-4 p-4 bg-slate-100 rounded min-h-[12rem] overflow-auto font-mono text-sm">
           {target.split('').map((ch, i) => renderChar(ch, i))}
         </div>
 
@@ -155,7 +161,6 @@ export default function App() {
           <button onClick={() => inputRef.current?.focus()} className="px-3 py-2 bg-indigo-600 text-white rounded">Focus input (start typing)</button>
         </div>
       </div>
-      <div className="mt-4 text-sm text-gray-600">ET outline is loaded from <strong>EToutline.json</strong> in the repo root.</div>
     </div>
   )
 }
