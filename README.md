@@ -15,28 +15,13 @@ A typing practice application for an evangelism outline.
 * Can be hosted on the church website or my own website
 
 ## Commands
-Inside that directory, you can run several commands:
-* `npm start` - Starts the development server.
-* `npm run build` - Bundles the app into static files for production.
-* `npm test` - Starts the test runner.
-* `npm run eject` - Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
-
-We suggest that you begin by typing:
-* `cd app`
-* `npm start`
-
-## Packages
-
-
-### UI
-
-### Functionality
-* Typing related packages...
-
-## Ideas
-
-### Configurations
-* Stop moving ahead at error or continue forward (scripture typer & type racer vs real doc typing) 
 
 ## Todo:
-* Fix the json "number"
+* Fix the json "number" / "section" based on a fresh copy of the outline
+* Fix the days to the real days.
+* Don't expect users to type new lines, auto new line for them.
+* Don't use a text area. use an input. Ones the line is complete, create a new line, lock in the old section as HTML.
+* Feature: Allow a preview of the outline. 
+* Updates readme.md
+   * commands
+   * Update tech description
