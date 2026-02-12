@@ -14,7 +14,12 @@ A typing practice application for an evangelism outline.
 
 * Can be hosted on the church website or my own website
 
+## Setup
+* in the terminal, use `npm install`
+
 ## Commands
+* in the terminal, use `npm run dev`
+* go to http://localhost:5173/ in browser.
 
 ## Todo:
 * Fix the json "number" / "section" based on a fresh copy of the outline
