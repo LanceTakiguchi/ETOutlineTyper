@@ -33,7 +33,6 @@ A typing practice application for an evangelism outline.
    * commands
    * Update tech description
 * make mobile friendly
-* Hide outline typing preview
 * Gradual give a hint for the next character
 * Check if you need to use backspace to delete.
 * Add a reset button
@@ -43,4 +42,6 @@ A typing practice application for an evangelism outline.
 * Resize the window
 
 ## Updates
-* Feature: Allow a preview of the outline. 2/12/2026 - LT
+* 2/12/2026 - LT
+    * Feature: Allow a preview of the outline.
+    * Feature: ghost visibility.

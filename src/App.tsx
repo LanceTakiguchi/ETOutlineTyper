@@ -101,7 +101,7 @@ export default function App() {
   const renderChar = (ch: string, i: number) => {
     const isTyped = i < typed.length
     const isCurrent = i === typed.length
-    const base = isTyped ? 'text-green-600' : isCurrent ? 'underline text-black' : ghostVisible ? 'text-gray-400' : 'hidden'
+    const base = isTyped ? 'text-green-600' : isCurrent ? 'underline decoration-black ' + (ghostVisible ? 'text-black-400' : 'text-transparent') : ghostVisible ? 'text-gray-400' : 'hidden'
     const visible = ch === '\n' ? '↵' : ch === ' ' ? '·' : ch
     return (
       <span key={i} className={`${base} not-italic whitespace-pre-wrap`}>{visible}</span>
