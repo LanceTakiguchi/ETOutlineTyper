@@ -28,6 +28,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy JSON to dist
+        # This manually moves your JSON file into the build output folder
+        # if it isn't already handled by the Vite public folder.
+        run: cp EToutline.json dist/
+
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:

@@ -138,6 +138,13 @@ export default function App() {
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">Instructions</label>
           <p className="text-sm text-gray-600">Type the outline character-by-character. If you type a wrong character the progress will pause until you correct it. Use Backspace to delete.</p>
+          <p className="text-sm text-gray-600">Key:</p>
+          <ul className="list-disc list-inside text-sm text-gray-600">
+            <li><span className="text-green-600 font-semibold">Green</span>: Correctly typed characters.</li>
+            <li><span className="underline decoration-black">Underlined</span>: The next character to type.</li>
+            <li><span className="text-gray-400">Gray</span>: Upcoming characters (shown when "Ghost Characters" is enabled).</li>
+            <li><span className="text-transparent">Invisible</span>: Upcoming characters (default state).</li>
+          </ul>
         </div>
 
         <div className="mb-4 flex items-center gap-2">
