@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "node -r ./scripts/polyfill-crypto.js ./node_modules/vite/bin/vite.js",
     "build": "node -r ./scripts/polyfill-crypto.js ./node_modules/vite/bin/vite.js build",
-    "preview": "node -r ./scripts/polyfill-crypto.js ./node_modules/vite/bin/vite.js preview"
+    "preview": "node -r ./scripts/polyfill-crypto.js ./node_modules/vite/bin/vite.js preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
