@@ -41,7 +41,7 @@ export default function App() {
 
   // Get Outline data on load.
   useEffect(() => {
-    fetch('/EToutline.json')
+    fetch('./EToutline.json')
       .then((r) => r.json())
       .then((data: OutlineData) => {
         const lines = flattenSections(data.sections)
