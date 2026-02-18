@@ -1,6 +1,8 @@
 # ET Outline Typer
 A typing practice application for an evangelism outline.
 
+Live Link: [ET Outline Typer - https://lancetakiguchi.github.io/ETOutlineTyper/index.html](https://lancetakiguchi.github.io/ETOutlineTyper/index.html)
+
 * Birth of Idea: Long time idea and useful need at my church. 
     * Problems 
         * hard to practice by yourself. How do you know you said the verse verbatum
@@ -18,8 +20,14 @@ A typing practice application for an evangelism outline.
 * in the terminal, use `npm install`
 
 ## Commands
+
+### Run Locally
 * in the terminal, use `npm run dev`
 * go to http://localhost:5173/ in browser.
+
+### Deploy
+* Auto deploys went pushing to the branch, "main"
+* Manual: You can use `npm run deploy` in terminal
 
 ## Todo:
 * Fix the json "number" / "section" based on a fresh copy of the outline

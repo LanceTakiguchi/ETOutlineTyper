@@ -33,6 +33,7 @@ try {
 
 export default defineConfig({
   plugins: [react()],
+  base: '/ETOutlineTyper/',
   server: {
     port: 5173
   }
