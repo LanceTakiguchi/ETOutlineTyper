@@ -1,7 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwindcss/animate.css";
 
 html, body, #root {
   height: 100%;
+}
+
+@layer utilities {
+  @keyframes blinking {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .animate-blinking {
+    animation: blinking 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
 }
