@@ -165,7 +165,7 @@ export default function App() {
         {error && <div className="mb-4 text-red-700">{error}</div>}
 
         <div className="mt-2">
-          <input ref={inputRef} className="opacity-0 absolute left-0 top-0" aria-hidden value={typed} readOnly />
+          <input ref={inputRef} className="opacity-0 absolute left-0 top-0" value={typed} readOnly />
           <button onClick={() => inputRef.current?.focus()} className="px-3 py-2 bg-indigo-600 text-white rounded">Focus input (start typing)</button>
         </div>
       </div>
