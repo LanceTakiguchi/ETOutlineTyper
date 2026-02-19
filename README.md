@@ -56,3 +56,4 @@ Live Link: [ET Outline Typer - https://lancetakiguchi.github.io/ETOutlineTyper/i
 * 2/18/2026 - LT
     * Deployed at https://lancetakiguchi.github.io/ETOutlineTyper/
     * Add PDF
+    * Blinking underline

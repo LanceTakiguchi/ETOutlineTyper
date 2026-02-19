@@ -139,7 +139,7 @@ export default function App() {
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">Instructions</label>
           <p className="text-sm text-gray-600">Type the outline character-by-character. If you type a wrong character the progress will pause until you correct it. Use Backspace to delete.</p>
-          <p className="text-sm text-gray-600">Key:</p>
+          <p className="block text-sm font-medium text-gray-700 mt-4">Key:</p>
           <ul className="list-disc list-inside text-sm text-gray-600">
             <li><span className="text-green-600 font-semibold">Green</span>: Correctly typed characters.</li>
             <li><span className="underline decoration-black">Underlined</span>: The next character to type.</li>
