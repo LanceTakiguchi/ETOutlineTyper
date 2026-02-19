@@ -2,7 +2,7 @@
   "title": "ET Outline",
   "sections": [
     {
-      "section": "I",
+      "section": 1,
       "heading": "Introduction",
       "week": 1,
       "subsections": [
@@ -15,34 +15,31 @@
           "heading": "Their religious background"
         },
         {
-          "section": "C₁",
-          "heading": "Christian background",
+          "section": "C",
+          "heading": "C1 Christian background",
           "subsections": [
             {
-              "section": "1",
+              "section": "1.3.1",
               "heading": "Their church background"
             },
             {
-              "section": "2",
+              "section": "1.3.2",
               "heading": "Your Testimony"
             },
             {
-              "section": "3",
+              "section": "1.3.3",
               "heading": "Two diagnostic questions",
               "subsections": [
                 {
-                  "section": "1",
-                  "type": "unordered-list",
+                  "section": "1.3.3.1",
                   "heading": "Question 1: If you were to die today, are you certain that you would go to heaven?"
                 },
                 {
-                  "section": "2",
-                  "type": "unordered-list",
+                  "section": "1.3.3.2",
                   "heading": "Question 2: If God were to ask you, “Why should I let you into my heaven?” what would you say?"
                 },
                 {
-                  "section": "3",
-                  "type": "unordered-list",
+                  "section": "1.3.3.3",
                   "heading": "Repeat and confirm answer"
                 }
               ]
@@ -50,89 +47,80 @@
           ]
         },
         {
-          "section": "C₂",
-          "heading": "Non-christian background",
+          "section": "1.4",
+          "heading": "C2 Non-christian background",
           "subsections": [
             {
-              "section": "1",
+              "section": "1.4.1",
               "heading": "Their beliefs"
             },
             {
-              "section": "2",
+              "section": "1.4.2",
               "heading": "Your testimony"
             },
             {
-              "section": "3",
+              "section": "1.4.3",
               "heading": "Transition question: Have you ever looked into what christianity teaches?"
             }
           ]
         },
         {
-          "section": "D",
-          "type": "transition",
+          "section": "1.5",
           "heading": "Transition: According to the Bible, only the righteous will get into heaven (1 Cor 6:9a). Would you consider yourself a righteous (good) person?"
         }
       ]
     },
     {
-      "section": "II",
+      "section": 2,
       "heading": "The Gospel",
+      "week": 2,
       "subsections": [
         {
-          "section": "A",
+          "section": "2.1",
           "heading": "Sin",
-          "week": 2,
           "subsections": [
             {
-              "section": "1",
+              "section": "2.1.1",
               "heading": "The Ten Commandments",
               "subsections": [
                 {
-                  "section": "1",
-                  "type": "unordered-list",
+                  "section": "2.1.1.1",
                   "heading": "Liar"
                 },
                 {
-                  "section": "2",
-                  "type": "unordered-list",
+                  "section": "2.1.1.2",
                   "heading": "Thief"
                 },
                 {
-                  "section": "3",
-                  "type": "unordered-list",
+                  "section": "2.1.1.3",
                   "heading": "Murderer"
                 },
                 {
-                  "section": "4",
-                  "type": "unordered-list",
+                  "section": "2.1.1.4",
                   "heading": "Adulterer"
                 }
               ]
             },
             {
-              "section": "2",
-              "type": "transition",
+              "section": "2.1.2",
               "heading": "Transition: The Bible says that God will send all liars, thieves, murderers, and immoral people to hell. This is because of his righteous character."
             }
           ]
         },
         {
-          "section": "B",
+          "section": "2.2",
           "heading": "God",
-          "week": 3,
           "subsections": [
             {
-              "section": "1",
+              "section": "2.2.1",
               "heading": "Is just, therefore must punish sin",
               "subsections": [
                 {
-                  "section": "1",
+                  "section": "2.2.1.1",
                   "heading": "Exodus 34:7b",
-                  "type": "unordered-list",
                   "subsections": [
                     {
-                      "section": "1",
-                      "type": "verse",
+                      "section": "2.2.1.1.1",
                       "heading": "But [the Lord] will by no means clear the guilty, visiting the iniquity of the fathers on the children and the children’s children to the third and the fourth generation"
                     }
                   ]
@@ -140,17 +128,15 @@
               ]
             },
             {
-              "section": "2",
+              "section": "2.2.2",
               "heading": "Is merciful, therefore doesn’t want to punish us",
               "subsections": [
                 {
-                  "section": "1",
+                  "section": "2.2.2.1",
                   "heading": "1 John 4:8",
-                  "type": "unordered-list",
                   "subsections": [
                     {
-                      "section": "1",
-                      "type": "verse",
+                      "section": "2.2.2.1.1",
                       "heading": "Anyone who does not love does not know God, because God is love."
                     }
                   ]
@@ -158,33 +144,29 @@
               ]
             },
             {
-              "section": "3",
+              "section": "2.2.3",
               "heading": "Illustration: Courtroom"
             },
             {
-              "section": "4",
-              "type": "transition",
+              "section": "2.2.4",
               "heading": "Transition: God solved this apparent problem in the Person of Jesus Christ"
             }
           ]
         },
         {
-          "section": "C",
+          "section": "2.3",
           "heading": "Christ",
-          "week": 4,
           "subsections": [
             {
-              "section": "1",
-              "heading": "Who He is - fully God and fully man",
+              "section": "2.3.1",
+              "heading": "Who He is-fully God and fully man",
               "subsections": [
                 {
-                  "section": "1",
+                  "section": "2.3.1.1",
                   "heading": "John 1:1,14",
-                  "type": "unordered-list",
                   "subsections": [
                     {
-                      "section": "1",
-                      "type": "verse",
+                      "section": "2.3.1.1.1",
                       "heading": "In the beginning was the Word, and the Word was with God, and the Word was God. And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth"
                     }
                   ]
@@ -192,22 +174,19 @@
               ]
             },
             {
-              "section": "2",
-              "heading": "What He did - He took away our sins, placed them upon himself, and died in our place.",
+              "section": "2.3.2",
+              "heading": "What He did-He took away our sins, placed them upon himself, and died in our place.",
               "subsections": [
                 {
-                  "section": "1",
-                  "type": "unordered-list",
+                  "section": "2.3.2.1",
                   "heading": "Illustration: Record book"
                 },
                 {
-                  "section": "2",
+                  "section": "2.3.2.2",
                   "heading": "Isaiah 53:6",
-                  "type": "unordered-list",
                   "subsections": [
                     {
-                      "section": "1",
-                      "type": "verse",
+                      "section": "2.3.2.2.1",
                       "heading": "All we like sheep have gone astray; we have turned-every one-to his own way; and the LORD has laid on him the iniquity of us all"
                     }
                   ]
@@ -215,33 +194,29 @@
               ]
             },
             {
-              "section": "3",
+              "section": "2.3.3",
               "heading": "Three days later He rose from the dead so that in union with Him we can have eternal life."
             },
             {
-              "section": "4",
-              "type": "transition",
+              "section": "2.3.4",
               "heading": "Transition: And so salvation is not by man’s work, but entirely by Christ’s finished work on the cross and his resurrection."
             }
           ]
         },
         {
-          "section": "D",
+          "section": "2.4",
           "heading": "Grace",
-          "week": 5,
           "subsections": [
             {
-              "section": "1",
+              "section": "2.4.1",
               "heading": "Heaven is a free gift",
               "subsections": [
                 {
-                  "section": "1",
+                  "section": "2.4.1.1",
                   "heading": "Romans 6:23",
-                  "type": "unordered-list",
                   "subsections": [
                     {
-                      "section": "1",
-                      "type": "verse",
+                      "section": "2.4.1.1.1",
                       "heading": "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus"
                     }
                   ]
@@ -249,17 +224,15 @@
               ]
             },
             {
-              "section": "2",
+              "section": "2.4.2",
               "heading": "It is not earned or deserved",
               "subsections": [
                 {
-                  "section": "1",
-                  "heading": "Ephesians 2:8-9", 
-                  "type": "unordered-list", 
+                  "section": "2.4.2.1",
+                  "heading": "Ephesians 2:8-9",
                   "subsections": [
                     {
-                      "section": "1",
-                      "type": "verse",
+                      "section": "2.4.2.1.1",
                       "heading": "For by grace you have been saved, through faith, and this is not your own doing, it is the gift of God, not a result of works, so that no one may boast."
                     }
                   ]
@@ -267,41 +240,37 @@
               ]
             },
             {
-              "section": "3",
-              "type": "transition",
+              "section": "2.4.3",
               "heading": "Transition: All you have to do to receive this gift is to put your faith in Jesus Christ"
             }
           ]
         },
         {
-          "section": "E",
+          "section": "2.5",
           "heading": "Faith",
-          "week": 6,
           "subsections": [
             {
-              "section": "1",
+              "section": "2.5.1",
               "heading": "Key to heaven"
             },
             {
-              "section": "2",
+              "section": "2.5.2",
               "heading": "What it is not",
               "subsections": [
                 {
-                  "section": "1",
+                  "section": "2.5.2.1",
                   "heading": "Mere intellectual assent",
-                  "type": "unordered-list",
                   "subsections": [
                     {
-                      "section": "a",
+                      "section": "2.5.2.1.1",
                       "heading": "The Devil"
                     },
                     {
-                      "section": "b",
+                      "section": "2.5.2.1.2",
                       "heading": "James 2:19",
                       "subsections": [
                         {
-                          "section": "1",
-                          "type": "verse",
+                          "section": "2.5.2.1.2.1",
                           "heading": "You believe that God is one; you do well. Even the demons believe-and shudder"
                         }
                       ]
@@ -309,31 +278,27 @@
                   ]
                 },
                 {
-                  "section": "2",
-                  "type": "unordered-list",
+                  "section": "2.5.2.2",
                   "heading": "Mere temporal faith"
                 }
               ]
             },
             {
-              "section": "3",
+              "section": "2.5.3",
               "heading": "What it is-trusting in Jesus Christ alone for eternal life",
               "subsections": [
                 {
-                  "section": "1",
-                  "type": "unordered-list",
+                  "section": "2.5.3.1",
                   "heading": "Acts 16:31",
                   "subsections": [
                     {
-                      "section": "1",
-                      "type": "verse",
+                      "section": "2.5.3.1.1",
                       "heading": "And they said, “Believe in the Lord Jesus, and you will be saved, you and your household.”"
                     }
                   ]
                 },
                 {
-                  "section": "2",
-                  "type": "none",
+                  "section": "2.5.3.2",
                   "heading": "Illustration: tightrope walker"
                 }
               ]
@@ -343,67 +308,63 @@
       ]
     },
     {
-      "section": "III",
+      "section": 3,
       "heading": "Clarification",
-      "week": 6,
+      "week": 3,
       "subsections": [
         {
-          "section": "A",
+          "section": "3.1",
           "heading": "Motive for Godly Living",
           "subsections": [
             {
-              "section": "1",
-              "heading": "Illustration: Dishes for Mom"
+              "section": "3.1.1",
+              "heading": "Dishes for Mom"
             }
           ]
         }
       ]
     },
     {
-      "section": "IV",
+      "section": 4,
       "heading": "Commitment",
-      "week": 8,
+      "week": 4,
       "subsections": [
         {
-          "section": "A",
+          "section": "4.1",
           "heading": "Assessment question",
           "subsections": [
             {
-              "section": "1",
-              "type":"unordered-list",
+              "section": "4.1.1",
               "heading": "So what do you think about this?"
             }
           ]
         },
         {
-          "section": "B",
+          "section": "4.2",
           "heading": "Belief question",
           "subsections": [
             {
-              "section": "1",
-              "type":"unordered-list",
+              "section": "4.2.1",
               "heading": "Is this something that you want to believe?"
             }
           ]
         },
         {
-          "section": "C",
+          "section": "4.3",
           "heading": "Clarification of Commitment",
           "subsections": [
             {
-              "section": "1",
-              "type":"unordered-list",
+              "section": "4.3.1",
               "heading": "Love, repentance, and submission"
             }
           ]
         },
         {
-          "section": "D",
+          "section": "4.4",
           "heading": "Direct follow-up",
           "subsections": [
             {
-              "section": "1",
-              "type":"unordered-list",
+              "section": "4.4.1",
               "heading": "Invite them to church."
             }
           ]
@@ -411,35 +372,33 @@
       ]
     },
     {
-      "section": "V",
+      "section": 5,
       "heading": "Immediate Follow-up",
-      "week": 9,
       "subsections": [
         {
-          "section": "A",
+          "section": "5.1",
           "heading": "Means of Growth",
           "subsections": [
             {
-              "section": "1",
+              "section": "5.1.1",
               "heading": "Bible",
               "subsections": [
                 {
                   "section": "5.1.1.1",
-                  "type": "unordered-list",
                   "heading": "Read Mark, 1 chapter a day"
                 }
               ]
             },
             {
-              "section": "2",
+              "section": "5.1.2",
               "heading": "Prayer"
             },
             {
-              "section": "3",
+              "section": "5.1.3",
               "heading": "Fellowship"
             },
             {
-              "section": "4",
+              "section": "5.1.4",
               "heading": "Witness"
             }
           ]
