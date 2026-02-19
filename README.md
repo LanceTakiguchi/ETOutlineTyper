@@ -27,7 +27,7 @@ Live Link: [ET Outline Typer - https://lancetakiguchi.github.io/ETOutlineTyper/i
 
 ### Deploy
 * Auto deploys went pushing to the branch, "main"
-* Manual: You can use `npm run deploy` in terminal
+* Tech: Using github pages and github actions to make deployment.
 
 ## Todo:
 * Fix the json "number" / "section" based on a fresh copy of the outline
@@ -53,3 +53,6 @@ Live Link: [ET Outline Typer - https://lancetakiguchi.github.io/ETOutlineTyper/i
 * 2/12/2026 - LT
     * Feature: Allow a preview of the outline.
     * Feature: ghost visibility.
+* 2/18/2026 - LT
+    * Deployed at https://lancetakiguchi.github.io/ETOutlineTyper/
+    * Add PDF

@@ -4,7 +4,7 @@
     {
       "section": 1,
       "heading": "Introduction",
-      "day": "1",
+      "week": 1,
       "subsections": [
         {
           "section": "A",
@@ -73,6 +73,7 @@
     {
       "section": 2,
       "heading": "The Gospel",
+      "week": 2,
       "subsections": [
         {
           "section": "2.1",
@@ -309,6 +310,7 @@
     {
       "section": 3,
       "heading": "Clarification",
+      "week": 3,
       "subsections": [
         {
           "section": "3.1",
@@ -325,6 +327,7 @@
     {
       "section": 4,
       "heading": "Commitment",
+      "week": 4,
       "subsections": [
         {
           "section": "4.1",

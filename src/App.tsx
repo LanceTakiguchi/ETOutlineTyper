@@ -167,6 +167,10 @@ export default function App() {
           <input ref={inputRef} className="opacity-0 absolute left-0 top-0" aria-hidden value={typed} readOnly />
           <button onClick={() => inputRef.current?.focus()} className="px-3 py-2 bg-indigo-600 text-white rounded">Focus input (start typing)</button>
         </div>
+        
+        <div className="mt-2">
+          <a href="./Outline.pdf" target="_blank" className="text-blue-600 hover:underline">Link to PDF of the outline</a>
+        </div>
       </div>
     </div>
   )
