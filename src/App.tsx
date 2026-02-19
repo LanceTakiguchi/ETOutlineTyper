@@ -128,6 +128,7 @@ export default function App() {
         <div className="mb-4 flex items-center gap-2">
           <label className="block text-sm font-medium text-gray-700">Outline Preview</label>
           <button onClick={() => setPreviewVisible((v) => !v)} className="px-2 py-1 bg-gray-200 rounded text-sm">{previewVisible ? 'Hide 🙈' : 'Show 🐵'}</button>
+          <a href="./Outline.pdf" target="_blank" className="px-2 py-1text-sm text-gray-700 bg-gray-200 rounded box-border border border-transparent hover:bg-gray-400 focus:ring-4 shadow-xs leading-5 rounded-base px-4 py-2.5 focus:outline-none">Download PDF 📄</a>
         </div>
         <div className={`${previewVisible ? null : ' hidden'} preview mb-4 p-4 bg-slate-100 rounded max-h-64 overflow-auto font-mono text-sm`}>
           {outline.split('\n').map((line, i) => (
@@ -143,7 +144,7 @@ export default function App() {
             <li><span className="text-green-600 font-semibold">Green</span>: Correctly typed characters.</li>
             <li><span className="underline decoration-black">Underlined</span>: The next character to type.</li>
             <li><span className="text-gray-400">Gray</span>: Upcoming characters (shown when "Ghost Characters" is enabled).</li>
-            <li><span className="text-transparent">Invisible</span>: Upcoming characters (default state).</li>
+            <li><span className="text-gray-300">Invisible</span>: Upcoming characters (default state).</li>
           </ul>
         </div>
 
@@ -166,10 +167,6 @@ export default function App() {
         <div className="mt-2">
           <input ref={inputRef} className="opacity-0 absolute left-0 top-0" aria-hidden value={typed} readOnly />
           <button onClick={() => inputRef.current?.focus()} className="px-3 py-2 bg-indigo-600 text-white rounded">Focus input (start typing)</button>
-        </div>
-        
-        <div className="mt-2">
-          <a href="./Outline.pdf" target="_blank" className="text-blue-600 hover:underline">Link to PDF of the outline</a>
         </div>
       </div>
     </div>
